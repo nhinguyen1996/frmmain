@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="db">
+  <DataContextMoniker Name="/dbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5aa0ae76-e6ce-45d3-85d9-71882c84e382" absoluteBounds="3.5, 0.875, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/dbDataContext/CHITIETDV" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ca0a2af-f978-495f-b6de-2d6e68f643ed" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9057494-84fd-4a1e-9cfa-a9253be8910c" absoluteBounds="3.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/dbDataContext/LOG_IN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4090b227-f351-461c-a9d9-ebbc2f333a08" absoluteBounds="3.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04ab378c-d7fb-4529-8bf5-200865d76306" absoluteBounds="0.75, 1, 2, 1.3862939453125">
+      <DataClassMoniker Name="/dbDataContext/DICHVU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40faa420-1dc5-4c40-b0e5-f38d4f17965e" absoluteBounds="0.765, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66f55028-ae1c-4ea1-8276-43118a16c5eb" absoluteBounds="0.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/dbDataContext/KHACHHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6a131f5a-ea4c-463b-8b3c-916bfd2d532f" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.69314697265625); (3.5 : 1.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbDataContext/DICHVU/DICHVU_CHITIETDV" />
+      <nodes>
+        <classShapeMoniker Id="04ab378c-d7fb-4529-8bf5-200865d76306" />
+        <classShapeMoniker Id="5aa0ae76-e6ce-45d3-85d9-71882c84e382" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.35984537760417); (3.59375 : 5.35984537760417); (3.59375 : 2.45359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbDataContext/KHACHHANG/KHACHHANG_CHITIETDV" />
+      <nodes>
+        <classShapeMoniker Id="66f55028-ae1c-4ea1-8276-43118a16c5eb" />
+        <classShapeMoniker Id="5aa0ae76-e6ce-45d3-85d9-71882c84e382" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

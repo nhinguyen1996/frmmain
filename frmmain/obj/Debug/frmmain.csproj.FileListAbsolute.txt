@@ -1,0 +1,26 @@
+c:\users\tkkil\onedrive\documents\visual studio 2015\Projects\frmmain\frmmain\bin\Debug\frmmain.exe.config
+c:\users\tkkil\onedrive\documents\visual studio 2015\Projects\frmmain\frmmain\bin\Debug\frmmain.exe
+c:\users\tkkil\onedrive\documents\visual studio 2015\Projects\frmmain\frmmain\bin\Debug\frmmain.pdb
+c:\users\tkkil\onedrive\documents\visual studio 2015\Projects\frmmain\frmmain\obj\Debug\frmmain.csprojResolveAssemblyReference.cache
+c:\users\tkkil\onedrive\documents\visual studio 2015\Projects\frmmain\frmmain\obj\Debug\frmmain.frmkhachhang.resources
+c:\users\tkkil\onedrive\documents\visual studio 2015\Projects\frmmain\frmmain\obj\Debug\frmmain.Properties.Resources.resources
+c:\users\tkkil\onedrive\documents\visual studio 2015\Projects\frmmain\frmmain\obj\Debug\frmmain.csproj.GenerateResource.Cache
+c:\users\tkkil\onedrive\documents\visual studio 2015\Projects\frmmain\frmmain\obj\Debug\frmmain.exe
+c:\users\tkkil\onedrive\documents\visual studio 2015\Projects\frmmain\frmmain\obj\Debug\frmmain.pdb
+C:\Users\tkkil\OneDrive\documents\visual studio 2015\Projects\frmmain\frmmain\obj\Debug\frmmain.MDIParent1.resources
+C:\Users\tkkil\Downloads\frmmain\frmmain\bin\Debug\frmmain.exe.config
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.exe
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.pdb
+C:\Users\tkkil\Downloads\frmmain\frmmain\bin\Debug\frmmain.exe
+C:\Users\tkkil\Downloads\frmmain\frmmain\bin\Debug\frmmain.pdb
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.csprojResolveAssemblyReference.cache
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.frmkhachhang.resources
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.MDIParent1.resources
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.Properties.Resources.resources
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.csproj.GenerateResource.Cache
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.LOGIN.resources
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.frmprint.resources
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.csproj.ResolveComReference.cache
+C:\Users\tkkil\Downloads\frmmain\frmmain\bin\Debug\itextsharp.xml
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.frmdichvu.resources
+C:\Users\tkkil\Downloads\frmmain\frmmain\obj\Debug\frmmain.frmctdv.resources

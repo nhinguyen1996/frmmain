@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A307C56-D0F7-4AA2-AF8A-07725B7585AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>frmmain</RootNamespace>
+    <AssemblyName>frmmain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>E:\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="frmctdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmctdv.Designer.cs">
+      <DependentUpon>frmctdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdichvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdichvu.Designer.cs">
+      <DependentUpon>frmdichvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkhachhang.Designer.cs">
+      <DependentUpon>frmkhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DANGNHAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DANGNHAP.designer.cs">
+      <DependentUpon>DANGNHAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprint.Designer.cs">
+      <DependentUpon>frmprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="db.dbml.layout">
+      <DependentUpon>db.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="frmctdv.resx">
+      <DependentUpon>frmctdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdichvu.resx">
+      <DependentUpon>frmdichvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkhachhang.resx">
+      <DependentUpon>frmkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DANGNHAP.resx">
+      <DependentUpon>DANGNHAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmprint.resx">
+      <DependentUpon>frmprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="db.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>db.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1480961970_configuration 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1480961866_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1480961843_printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010_x-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-male-user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-male-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dossier-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personal_seo_traning_graphic-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Study-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481229212_plus-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481229231_new-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481229250_common-logout-signout-exit-glyph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481229006_close-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481229035_trash_bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481229131_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481229393_Customer_Male_Light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481229703_excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481229823_pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481231048_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481231089_icons_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1481447163_finance-26.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLKHACHHANG" Class="dbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=THINH-HOANG\SQLEXPRESS;Initial Catalog=QLKHACHHANG;Integrated Security=True" SettingsObjectName="frmmain.Properties.Settings" SettingsPropertyName="QLKHACHHANGConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CHITIETDV" Member="CHITIETDVs">
+    <Type Name="CHITIETDV">
+      <Column Name="MADV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MAKH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NGAYNHAP" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="THANHTIEN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="DICHVU_CHITIETDV" Member="DICHVU" ThisKey="MADV" OtherKey="MADV" Type="DICHVU" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="KHACHHANG_CHITIETDV" Member="KHACHHANG" ThisKey="MAKH" OtherKey="MAKH" Type="KHACHHANG" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOG_IN" Member="LOG_INs">
+    <Type Name="LOG_IN">
+      <Column Name="USENAME" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PASS" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="QUYEN" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DICHVU" Member="DICHVUs">
+    <Type Name="DICHVU">
+      <Column Name="MADV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENDV" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="DICHVU_CHITIETDV" Member="CHITIETDVs" ThisKey="MADV" OtherKey="MADV" Type="CHITIETDV" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
+    <Type Name="KHACHHANG">
+      <Column Name="MAKH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENKH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIACHI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PHONE" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="KHACHHANG_CHITIETDV" Member="CHITIETDVs" ThisKey="MAKH" OtherKey="MAKH" Type="CHITIETDV" />
+    </Type>
+  </Table>
+</Database>
