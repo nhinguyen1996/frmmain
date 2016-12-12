@@ -40,28 +40,31 @@ namespace frmmain
             if (txtuser.Text.Length == 0 || txtpassword.Text.Length == 0)
                 MessageBox.Show("Vui lòng nhập!", "Thông báo");
             else
-            { 
+            {
                 bool ok = ktlogin(txtuser.Text, txtpassword.Text);
                 if (ok == true)
                 {
-                    MessageBox.Show("Đăng nhập thành công","Thành Công");
-                    this.Hide();                              
-                    if (txtuser.Text == "admin") { 
+                    MessageBox.Show("Đăng nhập thành công", "Thành Công");
+                    this.Hide();
+                    if (txtuser.Text == "admin")
+                    {
                         MDIParent1.QUYEN = "GD";
                         frmctdv.QUYEN = "GD";
                         frmdichvu.QUYEN = "GD";
                         frmkhachhang.QUYEN = "GD";
                     }
-                    else { 
+                    else
+                    {
                         MDIParent1.QUYEN = "NV";
                         frmctdv.QUYEN = "NV";
                         frmdichvu.QUYEN = "NV";
                         frmkhachhang.QUYEN = "NV";
                     }
                     MDIParent1 f = new MDIParent1();
-                    f.Show();                                        
+                    f.Show();
                 }
-                else {
+                else
+                {
                     MessageBox.Show("Đăng nhập thất bại", "Thất bại");
                 }
             }
